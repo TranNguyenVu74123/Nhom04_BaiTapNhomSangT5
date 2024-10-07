@@ -28,5 +28,20 @@ namespace Nhom4_BaiToanCoBan
             txtSoA.Text = "";
             txtSoB.Text = "";
         }
+
+        private void btnNhan_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double soA = Convert.ToDouble(txtSoA.Text);
+                double soB = Convert.ToDouble(txtSoB.Text);
+                double ketQua = soA * soB;
+                txtKetQua.Text = ketQua.ToString();
+            }
+            catch
+            {
+                MessageBox.Show("Please input a valid number!");
+            }
+        }
     }
 }
