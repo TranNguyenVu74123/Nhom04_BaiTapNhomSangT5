@@ -33,9 +33,7 @@ namespace Nhom4_BaiToanCoBan
         {
             double soA = double.Parse(txtSoA.Text);
             double soB = double.Parse(txtSoB.Text);
-
             double ketQua = soA - soB;
-
             txtKetQua.Text = ketQua.ToString();
         }
     }
