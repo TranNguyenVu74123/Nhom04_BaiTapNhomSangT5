@@ -35,31 +35,13 @@ namespace Nhom4_BaiToanCoBan
             {
                 double soA = Convert.ToDouble(txtSoA.Text);
                 double soB = Convert.ToDouble(txtSoB.Text);
-
-                if (soB != 0)
-                {
-                    double ketQua = soA / soB;
-                    txtKetQua.Text = ketQua.ToString();
-                }
-                else
-                {
-                    MessageBox.Show("Không thể chia cho 0!");
-                }
+                double ketQua = soA * soB;
+                txtKetQua.Text = ketQua.ToString();
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show("Vui lòng nhập số hợp lệ!");
+                MessageBox.Show("Please input a valid number!");
             }
-        }
-        
-        private void btnTru_Click(object sender, EventArgs e)
-        {
-            double soA = double.Parse(txtSoA.Text);
-            double soB = double.Parse(txtSoB.Text);
-
-            double ketQua = soA - soB;
-
-            txtKetQua.Text = ketQua.ToString();
         }
     }
 }
