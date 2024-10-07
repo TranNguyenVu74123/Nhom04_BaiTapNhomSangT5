@@ -77,7 +77,7 @@ namespace Nhom4_BaiToanCoBan
                 double ketQua = soA * soB;
                 txtKetQua.Text = ketQua.ToString();
             }
-            catch
+            catch (Exception ex)
             {
                 MessageBox.Show("Please input a valid number!");
             }
