@@ -29,6 +29,7 @@ namespace Nhom4_BaiToanCoBan
             txtSoB.Text = "";
         }
 
+
 		private void btnCong_Click(object sender, EventArgs e)
 		{
             int tong;
@@ -38,4 +39,21 @@ namespace Nhom4_BaiToanCoBan
             txtKetQua.Text = txtSoA.Text + " + " + txtSoB.Text + " = " + tong;
 		}
 	}
+
+        private void btnChia_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double soA = Convert.ToDouble(txtSoA.Text);
+                double soB = Convert.ToDouble(txtSoB.Text);
+                double ketQua = soA * soB;
+                txtKetQua.Text = ketQua.ToString();
+            }
+            catch
+            {
+                MessageBox.Show("Please input a valid number!");
+            }
+        }
+    }
+
 }
