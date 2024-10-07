@@ -28,5 +28,28 @@ namespace Nhom4_BaiToanCoBan
             txtSoA.Text = "";
             txtSoB.Text = "";
         }
+
+        private void btnChia_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double soA = Convert.ToDouble(txtSoA.Text);
+                double soB = Convert.ToDouble(txtSoB.Text);
+
+                if (soB != 0)
+                {
+                    double ketQua = soA / soB;
+                    txtKetQua.Text = ketQua.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Không thể chia cho 0!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Vui lòng nhập số hợp lệ!");
+            }
+        }
     }
 }
