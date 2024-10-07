@@ -28,5 +28,14 @@ namespace Nhom4_BaiToanCoBan
             txtSoA.Text = "";
             txtSoB.Text = "";
         }
-    }
+
+		private void btnCong_Click(object sender, EventArgs e)
+		{
+            int tong;
+            Console.WriteLine(txtSoA.Text);
+            Console.WriteLine(txtSoB.Text);
+            tong = int.Parse(txtSoA.Text) + int.Parse(txtSoB.Text);
+            txtKetQua.Text = txtSoA.Text + " + " + txtSoB.Text + " = " + tong;
+		}
+	}
 }
