@@ -19,16 +19,41 @@ namespace Nhom4_BaiToanCoBan
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Close();
+            DialogResult result = MessageBox.Show(
+                "Chắc muốn thoát chưa",
+                "Xác nhận",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+                );
+            if(result == DialogResult.Yes)
+                Close();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            txtKetQua.Text = "";
+			DialogResult result = MessageBox.Show(
+				"Chắc muốn cài lại chưa",
+				"Xác nhận",
+				MessageBoxButtons.YesNo,
+				MessageBoxIcon.Question
+				);
+            if(result == DialogResult.Yes) {
+			txtKetQua.Text = "";
             txtSoA.Text = "";
             txtSoB.Text = "";
+            }
         }
 
+
+		private void btnCong_Click(object sender, EventArgs e)
+		{
+            int tong;
+            Console.WriteLine(txtSoA.Text);
+            Console.WriteLine(txtSoB.Text);
+            tong = int.Parse(txtSoA.Text) + int.Parse(txtSoB.Text);
+            txtKetQua.Text = txtSoA.Text + " + " + txtSoB.Text + " = " + tong;
+		}
+	}
         private void btnTru_Click(object sender, EventArgs e)
         {
             double soA = double.Parse(txtSoA.Text);
@@ -36,15 +61,6 @@ namespace Nhom4_BaiToanCoBan
             double ketQua = soA - soB;
             txtKetQua.Text = ketQua.ToString();	
 	      }
-  
-        private void btnCong_Click(object sender, EventArgs e)
-        {
-                int tong;
-                Console.WriteLine(txtSoA.Text);
-                Console.WriteLine(txtSoB.Text);
-                tong = int.Parse(txtSoA.Text) + int.Parse(txtSoB.Text);
-                txtKetQua.Text = txtSoA.Text + " + " + txtSoB.Text + " = " + tong;
-        }
 
 	      private void btnChia_Click(object sender, EventArgs e){
  		      try
