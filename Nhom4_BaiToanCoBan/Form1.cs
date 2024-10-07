@@ -29,7 +29,7 @@ namespace Nhom4_BaiToanCoBan
             txtSoB.Text = "";
         }
 
-        private void btnNhan_Click(object sender, EventArgs e)
+        private void btnChia_Click(object sender, EventArgs e)
         {
             try
             {
