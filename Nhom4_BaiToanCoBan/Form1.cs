@@ -40,7 +40,7 @@ namespace Nhom4_BaiToanCoBan
 		}
 	}
 
-        private void btnChia_Click(object sender, EventArgs e)
+        private void btnNhan_Click(object sender, EventArgs e)
         {
             try
             {
