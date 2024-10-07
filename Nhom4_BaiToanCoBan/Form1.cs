@@ -34,7 +34,54 @@ namespace Nhom4_BaiToanCoBan
             double soA = double.Parse(txtSoA.Text);
             double soB = double.Parse(txtSoB.Text);
             double ketQua = soA - soB;
-            txtKetQua.Text = ketQua.ToString();
+            txtKetQua.Text = ketQua.ToString();	
+	      }
+  
+        private void btnCong_Click(object sender, EventArgs e)
+        {
+                int tong;
+                Console.WriteLine(txtSoA.Text);
+                Console.WriteLine(txtSoB.Text);
+                tong = int.Parse(txtSoA.Text) + int.Parse(txtSoB.Text);
+                txtKetQua.Text = txtSoA.Text + " + " + txtSoB.Text + " = " + tong;
+        }
+
+	      private void btnChia_Click(object sender, EventArgs e){
+ 		      try
+		            {
+                double soA = Convert.ToDouble(txtSoA.Text);
+                double soB = Convert.ToDouble(txtSoB.Text);
+            
+                if (soB != 0)
+                {
+                    double ketQua = soA / soB;
+                    lblKetQua.Text = ketQua.ToString();
+                } 
+                else
+                {
+                    MessageBox.Show("Không thể chia cho 0!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Vui lòng nhập số hợp lệ!");
+            }
+        }
+	
+        private void btnNhan_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double soA = Convert.ToDouble(txtSoA.Text);
+                double soB = Convert.ToDouble(txtSoB.Text);
+                double ketQua = soA * soB;
+                txtKetQua.Text = ketQua.ToString();
+            }
+            catch
+            {
+                MessageBox.Show("Please input a valid number!");
+            }
         }
     }
+
 }
