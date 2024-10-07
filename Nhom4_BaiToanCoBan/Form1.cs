@@ -19,14 +19,30 @@ namespace Nhom4_BaiToanCoBan
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Close();
+            DialogResult result = MessageBox.Show(
+                "Chắc muốn thoát chưa",
+                "Xác nhận",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+                );
+            if(result == DialogResult.Yes)
+                Close();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            txtKetQua.Text = "";
-            txtSoA.Text = "";
-            txtSoB.Text = "";
+			DialogResult result = MessageBox.Show(
+				"Chắc muốn cài lại chưa",
+				"Xác nhận",
+				MessageBoxButtons.YesNo,
+				MessageBoxIcon.Question
+				);
+            if (result == DialogResult.Yes)
+            {
+                txtKetQua.Text = "";
+                txtSoA.Text = "";
+                txtSoB.Text = "";
+            }
         }
 
 		private void btnCong_Click(object sender, EventArgs e)
