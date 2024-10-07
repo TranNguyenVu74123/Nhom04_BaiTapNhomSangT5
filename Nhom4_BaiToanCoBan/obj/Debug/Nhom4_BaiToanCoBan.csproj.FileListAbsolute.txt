@@ -1,0 +1,10 @@
+C:\Users\trann\OneDrive\Documents\BaiTapGitHubT5\Nhom4_BaiToanCoBan\Nhom4_BaiToanCoBan\bin\Debug\Nhom4_BaiToanCoBan.exe.config
+C:\Users\trann\OneDrive\Documents\BaiTapGitHubT5\Nhom4_BaiToanCoBan\Nhom4_BaiToanCoBan\bin\Debug\Nhom4_BaiToanCoBan.exe
+C:\Users\trann\OneDrive\Documents\BaiTapGitHubT5\Nhom4_BaiToanCoBan\Nhom4_BaiToanCoBan\bin\Debug\Nhom4_BaiToanCoBan.pdb
+C:\Users\trann\OneDrive\Documents\BaiTapGitHubT5\Nhom4_BaiToanCoBan\Nhom4_BaiToanCoBan\obj\Debug\Nhom4_BaiToanCoBan.csproj.AssemblyReference.cache
+C:\Users\trann\OneDrive\Documents\BaiTapGitHubT5\Nhom4_BaiToanCoBan\Nhom4_BaiToanCoBan\obj\Debug\Nhom4_BaiToanCoBan.Form1.resources
+C:\Users\trann\OneDrive\Documents\BaiTapGitHubT5\Nhom4_BaiToanCoBan\Nhom4_BaiToanCoBan\obj\Debug\Nhom4_BaiToanCoBan.Properties.Resources.resources
+C:\Users\trann\OneDrive\Documents\BaiTapGitHubT5\Nhom4_BaiToanCoBan\Nhom4_BaiToanCoBan\obj\Debug\Nhom4_BaiToanCoBan.csproj.GenerateResource.cache
+C:\Users\trann\OneDrive\Documents\BaiTapGitHubT5\Nhom4_BaiToanCoBan\Nhom4_BaiToanCoBan\obj\Debug\Nhom4_BaiToanCoBan.csproj.CoreCompileInputs.cache
+C:\Users\trann\OneDrive\Documents\BaiTapGitHubT5\Nhom4_BaiToanCoBan\Nhom4_BaiToanCoBan\obj\Debug\Nhom4_BaiToanCoBan.exe
+C:\Users\trann\OneDrive\Documents\BaiTapGitHubT5\Nhom4_BaiToanCoBan\Nhom4_BaiToanCoBan\obj\Debug\Nhom4_BaiToanCoBan.pdb
